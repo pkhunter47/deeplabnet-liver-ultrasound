@@ -55,7 +55,29 @@ DeepLabNet-R improved resistance to severe speckle noise and reduced gain, but p
 
 ## Release status
 
-This repository is currently a **method and result documentation release**. The uploaded project package contained the manuscript source and figures but not the executable training code. Manuscript files are not republished here. Code should be added only after the exact experiment implementation is recovered and checked against the reported protocol.
+The uploaded package contained the manuscript and figures, but not the original experiment code. This repository therefore includes a **manuscript-derived reference implementation** of the described architecture and losses. It is suitable for inspection and new experiments, but it is not claimed to reproduce the reported numbers until it is run with the original data, split manifest, preprocessing, and hyperparameters.
+
+## Repository contents
+
+```text
+deeplabnet-liver-ultrasound/
+├── src/deeplabnet/model.py   # Reference architecture
+├── train.py                  # Paired image/mask training runner
+├── requirements.txt
+├── docs/CODE_STATUS.md
+└── README.md
+```
+
+## Quick start
+
+Arrange data as `data/train/images`, `data/train/masks`, `data/val/images`, and `data/val/masks`, using matching file stems. Then run:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python train.py --data-root data --epochs 50 --output checkpoints/deeplabnet.pt
+```
 
 ## Limitations
 
