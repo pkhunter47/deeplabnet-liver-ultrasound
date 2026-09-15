@@ -1,0 +1,33 @@
+# Credentials
+.env
+.env.*
+kaggle.json
+*.pem
+*.key
+
+# Python and notebooks
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data, models, and generated results
+data/
+datasets/
+outputs/
+results/
+checkpoints/
+artifacts/
+*.npy
+*.npz
+*.pt
+*.pth
+*.keras
+*.h5
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
