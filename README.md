@@ -57,6 +57,10 @@ DeepLabNet-R improved resistance to severe speckle noise and reduced gain, but p
 
 The uploaded package contained the manuscript and figures, but not the original experiment code. This repository therefore includes a **manuscript-derived reference implementation** of the described architecture and losses. It is suitable for inspection and new experiments, but it is not claimed to reproduce the reported numbers until it is run with the original data, split manifest, preprocessing, and hyperparameters.
 
+## Conference acceptance
+
+**DeepLabNet: Lightweight Liver Ultrasound Segmentation via Haar Frequency Fusion and Entropy Guided Boundary Refinement** has been accepted for presentation at **IECBES 2026** (submission ID **1571348106**).
+
 ## Repository contents
 
 ```text
